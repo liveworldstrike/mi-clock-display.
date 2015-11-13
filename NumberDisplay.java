@@ -10,25 +10,30 @@ public class NumberDisplay
     // instance variables - replace the example below with your own
     private int limitNumbre;
     private int display;
+    private int display1;
 
     /**
      * Constructor for objects of class NumberDisplay
      */
-    public NumberDisplay()
+    public NumberDisplay(int limitNumber,int display2)
     {
-        // initialise instance variables
-        display = 0;
+       display = 0;
+       display1 = display2;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public void setValue()
     {
-        // put your code here
-        return x + y;
+        display = display1;
     }
+    
+    public String getDisplayValue()
+    {
+        String displayY = "%02d";
+        String result = String.format(displayY,display);
+        return resultado;
+    }
+    
+    public int getValue()
+    {}
+    
 }
