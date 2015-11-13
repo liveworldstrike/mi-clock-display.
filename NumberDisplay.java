@@ -30,10 +30,12 @@ public class NumberDisplay
     {
         String displayY = "%02d";
         String result = String.format(displayY,display);
-        return resultado;
+        return result;
     }
     
     public int getValue()
-    {}
+    {
+        return display;
+    }
     
 }
