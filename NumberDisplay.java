@@ -8,22 +8,23 @@
 public class NumberDisplay
 {
     // instance variables - replace the example below with your own
-    private int limitNumbre;
+    private int limitNumber;
     private int display;
-    private int display1;
+    
 
     /**
      * Constructor for objects of class NumberDisplay
      */
-    public NumberDisplay(int limitNumber,int display2)
+    public NumberDisplay(int limitNumber1)
     {
        display = 0;
-       display1 = display2;
+       limitNumber = limitNumber1;
     }
 
-    public void setValue()
+    public void setValue(int display1)
     {
         display = display1;
+        
     }
     
     public String getDisplayValue()
@@ -38,6 +39,18 @@ public class NumberDisplay
         return display;
     }
     
+    public void increment()
+    {
+        if (display == limitNumber)
+        {
+            display = 0;
+        }
+        else {
+            display++;
+        }
+    }
+       
+        
+    }
     
-    
-}
+

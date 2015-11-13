@@ -1,11 +1,13 @@
 #BlueJ class context
-comment0.params=limitNumber\ display2
-comment0.target=NumberDisplay(int,\ int)
+comment0.params=limitNumber1
+comment0.target=NumberDisplay(int)
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ NumberDisplay\r\n
-comment1.params=
-comment1.target=void\ setValue()
+comment1.params=display1
+comment1.target=void\ setValue(int)
 comment2.params=
 comment2.target=java.lang.String\ getDisplayValue()
 comment3.params=
 comment3.target=int\ getValue()
-numComments=4
+comment4.params=
+comment4.target=void\ increment()
+numComments=5
