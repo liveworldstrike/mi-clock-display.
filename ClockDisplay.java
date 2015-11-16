@@ -27,7 +27,7 @@ public class ClockDisplay
     }
     
     /**
-     * actualizar hora 
+     * actualizar hora del display
      */
     public void updateDisplay()
     {
@@ -64,7 +64,7 @@ public class ClockDisplay
     }
     
     /**
-     * avanzar un minto
+     * avanzar un minuto
      */
     public void timeTick()
     {
