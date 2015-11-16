@@ -27,22 +27,22 @@ public class ClockDisplay
     }
     
     /**
+     * Segundo Constructor for objects of class ClockDisplay
+     */
+    public ClockDisplay(int hora,int minuto)
+    {
+      //dar minutos y horas
+     horas = new NumberDisplay(24);
+     minutos = new NumberDisplay(60);
+     setTime(hora,minuto);
+    }
+    
+     /**
      * actualizar hora del display
      */
     public void updateDisplay()
     {
       horaActual = horas.getDisplayValue()+":"+ minutos.getDisplayValue();
-    }
-    
-     /**
-     * Segundo Constructor for objects of class ClockDisplay
-     */
-    public ClockDisplay(int hora,int minuto)
-    {
-      //iniciar horas y minutos
-     horas = new NumberDisplay(24);
-     minutos = new NumberDisplay(60);
-     setTime(hora,minuto);
     }
     
     /**
