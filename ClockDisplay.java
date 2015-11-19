@@ -61,7 +61,10 @@ public class ClockDisplay
             
         }
     }
+        else{
+            horaActual = horas.getDisplayValue()+":"+ minutos.getDisplayValue();
     }
+}
     
     /**
      * devolver hora 5 caracteres
