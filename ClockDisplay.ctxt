@@ -1,9 +1,9 @@
 #BlueJ class context
-comment0.params=
-comment0.target=ClockDisplay()
+comment0.params=tipos1
+comment0.target=ClockDisplay(boolean)
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ ClockDisplay\r\n
-comment1.params=hora\ minuto
-comment1.target=ClockDisplay(int,\ int)
+comment1.params=hora\ minuto\ tipos1
+comment1.target=ClockDisplay(int,\ int,\ boolean)
 comment1.text=\r\n\ Segundo\ Constructor\ for\ objects\ of\ class\ ClockDisplay\r\n
 comment2.params=
 comment2.target=void\ updateDisplay()

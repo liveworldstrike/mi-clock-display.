@@ -13,30 +13,34 @@ public class ClockDisplay
     private NumberDisplay minutos;
     //hora actual
     private String horaActual;
+    //tipo de horas
+    private boolean tipos;
     
     
 
     /**
      * Constructor for objects of class ClockDisplay
      */
-    public ClockDisplay()
+    public ClockDisplay(boolean tipos1)
     {
       //iniciar horas y minutos
      horas = new NumberDisplay(24);
      minutos = new NumberDisplay(59);
      updateDisplay();
+     tipos = tipos1;
 
     }
     
     /**
      * Segundo Constructor for objects of class ClockDisplay
      */
-    public ClockDisplay(int hora,int minuto)
+    public ClockDisplay(int hora,int minuto,boolean tipos1)
     {
       //dar minutos y horas
      horas = new NumberDisplay(24);
      minutos = new NumberDisplay(59);
      setTime(hora,minuto);
+     tipos = tipos1;
     }
     
      /**
@@ -44,6 +48,7 @@ public class ClockDisplay
      */
     public void updateDisplay()
     {
+        if (tipos == true){
         if(horas.getValue() >12){
             
             int hora = horas.getValue()-12;
@@ -55,7 +60,7 @@ public class ClockDisplay
            horaActual = horas.getDisplayValue()+":"+ minutos.getDisplayValue()+ "AM";
             
         }
-        
+    }
     }
     
     /**
