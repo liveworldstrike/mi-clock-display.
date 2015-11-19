@@ -13,6 +13,8 @@ public class ClockDisplay
     private NumberDisplay minutos;
     //hora actual
     private String horaActual;
+    
+    
 
     /**
      * Constructor for objects of class ClockDisplay
@@ -21,7 +23,7 @@ public class ClockDisplay
     {
       //iniciar horas y minutos
      horas = new NumberDisplay(24);
-     minutos = new NumberDisplay(60);
+     minutos = new NumberDisplay(59);
      updateDisplay();
 
     }
@@ -33,7 +35,7 @@ public class ClockDisplay
     {
       //dar minutos y horas
      horas = new NumberDisplay(24);
-     minutos = new NumberDisplay(60);
+     minutos = new NumberDisplay(59);
      setTime(hora,minuto);
     }
     
@@ -42,7 +44,18 @@ public class ClockDisplay
      */
     public void updateDisplay()
     {
-      horaActual = horas.getDisplayValue()+":"+ minutos.getDisplayValue();
+        if(horas.getValue() >12){
+            
+            int hora = horas.getValue()-12;
+            horaActual = hora +":"+ minutos.getDisplayValue()+ "PM";
+            
+        }
+        else{
+            
+           horaActual = horas.getDisplayValue()+":"+ minutos.getDisplayValue()+ "AM";
+            
+        }
+        
     }
     
     /**
