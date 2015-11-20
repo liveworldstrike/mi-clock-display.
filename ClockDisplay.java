@@ -103,11 +103,16 @@ public class ClockDisplay
 
                     if ( meses.getValue() == 0) {
                         anos.increment();
-                        meses.increment();
-                        dias.increment();
+                        
                     }
                 }
             }
+        }
+        if(meses.getValue()== 0){
+           meses.increment(); 
+        }
+        if(dias.getValue()== 0){
+           dias.increment(); 
         }
         updateHoraActual();
     }
