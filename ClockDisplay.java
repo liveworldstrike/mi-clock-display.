@@ -56,9 +56,9 @@ public class ClockDisplay
         minutos = new NumberDisplay(60);	
         horas.setValue(horasX);	
         minutos.setValue(minutosX);
-        dias = new NumberDisplay(dia);
-        anos = new NumberDisplay(ano);
-        meses = new NumberDisplay(mes);
+        dias = new NumberDisplay(31);
+        anos = new NumberDisplay(99);
+        meses = new NumberDisplay(13);
         dias.setValue(dia);	
         anos.setValue(ano);
         meses.setValue(mes);
@@ -103,6 +103,8 @@ public class ClockDisplay
 
                     if ( meses.getValue() == 0) {
                         anos.increment();
+                        meses.increment();
+                        dias.increment();
                     }
                 }
             }
